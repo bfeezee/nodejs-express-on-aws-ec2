@@ -1,7 +1,7 @@
 version: 0.0
 os: linux 
 files:
-  - sources: /https://console.aws.amazon.com/s3/buckets/codepipeline-us-east-1-441242651481?region=us-east-1&prefix=express-app-pipeline/
+  - sources: /
     destination: /home/ec-2-user/express-app
 hooks:
   ApplicationStop:
