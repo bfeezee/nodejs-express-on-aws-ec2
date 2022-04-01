@@ -3,7 +3,7 @@ const app = express ();
 
 
 app.get('/', (req, res) => {
-    res.send('<h1>Express Demo App</h1> <h4>With Node JS</h4> <p>Being updated via Elastic Beanstalk in AWS</p>');
+    res.send('<h1>Express Demo App</h1> <h4>With Node JS</h4> <p>Currently linked to  Elastic Beanstalk in AWS</p>');
 });
 
 const port = process.env.port || 3000;
