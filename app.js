@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express ();
+var img = document.createElement("img");
+img.src = "/Users/brian-deese/nodejs-express-on-aws-ec2/birriaTacos.jpeg";
 
 
 app.get('/', (req, res) => {
