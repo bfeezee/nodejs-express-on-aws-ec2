@@ -1,24 +1,12 @@
 const express = require('express');
 const app = express ();
-const port =3000;
+
 
 app.get('/', (req, res) => {
-    res.send('<h1>Express Demo App</h1> <h4>Message Success</h4> <p>Version 1.0</p>');
-})
+    res.send('</div><h1>This is Version 11 of this Express Demo Application--Update made on Wednesday 4-6-2022 by Brian Deese</h1><h2>added this line prior to sync with Brandon</h2> <h4>This was built as a node.js application</h4> <p>The code is being house in GitHub under ther "New" repository, auto-fetched by the "App5 pipeline created and delivered via  Elastic Beanstalk in AWS</p>');
+});
 
-app.get('/products', (req, res) => {
-    res.send([
-        {
-            productId: '101',
-            price: 100
-        },
-        {
-            productId: '102',
-            price: 150
-        }
-    ])
-})
-
+const port = process.env.port || 4000;
 app.listen(port, ()=> {
     console.log('Demo app is up and listening to port: ${port}');
-})
+});
